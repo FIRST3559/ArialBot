@@ -9,7 +9,7 @@ public class Lowerbot extends SimpleRobot {
     Joystick LeftStick = new Joystick (1);  // Left drive stick
     Joystick RightStick = new Joystick (2); // Right drive stick
     Joystick ThirdStick = new Joystick (3); // Arm joystick
-    //Compressor mainCompressor = new Compressor(1,1); //Compressor Object
+    Compressor mainCompressor = new Compressor(1,1); //Compressor Object
     Solenoid piston1out = new Solenoid(1); //First Solenoid Object
     Solenoid piston1in = new Solenoid (2); //Second Solenoid Object
     Victor testMotor = new Victor(1);
@@ -29,7 +29,7 @@ public class Lowerbot extends SimpleRobot {
         Timer.delay(10.0);
         piston1in.set(false);
         piston1out.set(false);
-        
+        //Hey, this is Griffin!
         testMotor.set(0.0);
         }
     }
